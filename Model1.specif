@@ -1,0 +1,1160 @@
+{
+    "dataTypes": [
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-Boolean",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Boolean",
+            "type": "xs:boolean"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-Byte",
+            "max": 255,
+            "min": 0,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Byte",
+            "type": "xs:integer"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-Integer",
+            "max": 32767,
+            "min": -32768,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Integer",
+            "type": "xs:integer"
+        },
+        {
+            "accuracy": 5,
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-Real",
+            "max": 10000,
+            "min": -10000,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Real",
+            "type": "xs:double"
+        },
+        {
+            "accuracy": 2,
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-Decimal2",
+            "max": 10000,
+            "min": -10000,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Real with 2 Decimals",
+            "type": "xs:double"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-Date",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Date or Timestamp",
+            "type": "xs:dateTime"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "String with length 96",
+            "id": "DT-ShortString",
+            "maxLength": 96,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "String[96]",
+            "type": "xs:string"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "String with length 1024",
+            "id": "DT-String",
+            "maxLength": 1024,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "String[1024]",
+            "type": "xs:string"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "A text string",
+            "id": "DT-Text",
+            "maxLength": 1024,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "dcterms:description",
+            "type": "xs:string"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-URL",
+            "maxLength": 1024,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "URL",
+            "type": "xs:string"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-EmailAddress",
+            "maxLength": 256,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "E-mail",
+            "type": "xs:string"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "id": "DT-FormattedText",
+            "maxLength": 8192,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "Formatted Text",
+            "type": "xhtml"
+        },
+        {
+            "changedAt": "2019-03-08T16:00:00+02:00",
+            "description": "Enumerated values for visibility",
+            "id": "DT-VisibilityKind",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "SpecIF:VisibilityKind",
+            "type": "xs:enumeration",
+            "values": [
+                {
+                    "id": "V-VisibilityKind-0",
+                    "value": "Public"
+                },
+                {
+                    "id": "V-VisibilityKind-1",
+                    "value": "Private"
+                },
+                {
+                    "id": "V-VisibilityKind-2",
+                    "value": "Protected"
+                },
+                {
+                    "id": "V-VisibilityKind-3",
+                    "value": "Package"
+                },
+                {
+                    "id": "V-VisibilityKind-4",
+                    "value": "Internal"
+                },
+                {
+                    "id": "V-VisibilityKind-5",
+                    "value": "Protected Internal"
+                }
+            ]
+        }
+    ],
+    "hierarchies": [
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Hierarchy",
+            "id": "H-fb5ba995-2c24-49dc-a3f6-f9453db83bfd",
+            "resource": "R-0b1af485-55c3-49d0-81c1-5c5fbac4b43c",
+            "title": "ReadytoBoard_Signal"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Hierarchy",
+            "id": "H-c882c514-f45e-4759-8dac-fb608b08546e",
+            "nodes": [
+                {
+                    "changedAt": "2020-02-13T12:27:51+02:00",
+                    "class": "RC-Hierarchy",
+                    "id": "H-f6afb45f-d60c-431d-b5f1-9c3013322f78",
+                    "nodes": [
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-e288ceea-7308-4bda-bf09-bde7e6520d89",
+                            "resource": "R-426170c5-a33b-48dc-917e-adf6e22684b8"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-d4bbaac4-b088-4690-98e1-181214370e22",
+                            "resource": "R-0d23903e-ab07-44b7-beca-6437c8a6eb5d"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-10ed0c44-8c49-4bfb-9a6f-8c3b42289fc1",
+                            "resource": "R-0452af23-9f93-4632-829c-3683c081d848"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-0355c86d-a24a-40dc-ab57-af3df389e636",
+                            "resource": "R-a380d9dc-f5a7-4dd4-b763-b6a2c12e70e2"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-2c8df049-c3b3-43b9-8650-6175cdbc88a8",
+                            "resource": "R-904b7762-e248-4f4a-9c5a-0e56ce786119"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-e99c0a65-1664-407c-a05d-5b53fe1af7dd",
+                            "resource": "R-9570a550-bc00-4318-8c33-de99285d7ba2"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-d829e52e-691a-4cf2-b0ab-4013d8349e7b",
+                            "resource": "R-037eafc6-4b81-480b-923b-4e02d44acec4"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-279647e7-99b8-438c-ae65-a91178cf781e",
+                            "resource": "R-985619df-bf62-4eb5-ad8b-a79b9288e8d0"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-8b31504d-c002-4fc5-a891-2e26589460ba",
+                            "resource": "R-754fdeae-fec1-4bfb-adb0-c81b25a67db0"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-91168e85-888e-479b-b00c-911f2541a731",
+                            "resource": "R-85b2d7be-4e84-4bc8-b9bf-1ac9932f8200"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-6c2d8813-a2d8-4aab-8db4-86d329eb9c56",
+                            "resource": "R-99e6aa2f-34fc-40e8-91d1-dadd4d6fd8e1"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-63bc31db-9d77-4d96-91d0-a68c5f3f52f2",
+                            "resource": "R-4f6bc3c9-7604-47e6-ad96-7fecb0473caf"
+                        },
+                        {
+                            "changedAt": "2020-02-13T12:27:51+02:00",
+                            "class": "RC-Hierarchy",
+                            "id": "H-277df6d3-9470-45c5-9be4-ecc5ceff26e4",
+                            "resource": "R-a28f784a-6c37-4551-aa54-cef47482bc67"
+                        }
+                    ],
+                    "resource": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+                    "title": "CabinProcess"
+                }
+            ],
+            "resource": "R-8f1393ff-cd82-4c77-80a2-4f5d2a42e37c",
+            "title": "CabinProcess"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Hierarchy",
+            "id": "H-cc00223b-1abb-44a4-b2d1-6de596260ad0",
+            "resource": "R-d6d749c9-a75b-4df6-afd2-db2b46a360b9",
+            "title": "Model_CabinProcess"
+        }
+    ],
+    "id": "TemplateID1",
+    "propertyClasses": [
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "dataType": "DT-ShortString",
+            "description": "<p>A name given to the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>",
+            "id": "PC-Name",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "dcterms:title"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "dataType": "DT-FormattedText",
+            "description": "<p>An account of the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>",
+            "id": "PC-Description",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "dcterms:description"
+        },
+        {
+            "changedAt": "2019-09-10T08:59:00+02:00",
+            "dataType": "DT-VisibilityKind",
+            "description": "The visibility of a resource (e.g. Public, Private, Protected,...) as known from object orientation.",
+            "id": "PC-Visibility",
+            "multiple": false,
+            "replaces": [],
+            "revision": "main/1",
+            "title": "SpecIF:Visibility"
+        },
+        {
+            "changedAt": "2019-08-20T20:32:25.411Z",
+            "dataType": "DT-ShortString",
+            "description": "The element type resp. the metamodel element (e.g. OMG:UML:2.5.1:Class)",
+            "id": "PC-Type",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "dcterms:type"
+        },
+        {
+            "changedAt": "2019-03-31T17:10:23.443Z",
+            "dataType": "DT-ShortString",
+            "description": "A stereotype gives an element an additional/different meaning.",
+            "id": "PC-Stereotype",
+            "replaces": [],
+            "revision": "main/1",
+            "title": "SpecIF:Stereotype"
+        }
+    ],
+    "resourceClasses": [
+        {
+            "changedAt": "2019-08-29T15:56:47+01:00",
+            "changedBy": "oalt",
+            "description": "<p>A 'Collection' is an arbitrary group of resources linked with a [[SpecIF:contains]] statement. It corresponds to a <a href=\"https://camunda.com/bpmn/reference/\">'Group'</a> in BPMN Diagrams.</p><p>BPMN: An arbitrary set of objects can be defined as a Group to show that they logically belong together. <small>(<i>source: <a href=\"http://www.bpmn-tool.com/en/tutorial/\">BPMN Tool</a></i>)</small></p>",
+            "id": "RC-Collection",
+            "instantiation": [
+                "auto"
+            ],
+            "propertyClasses": [
+                "PC-Name",
+                "PC-Description",
+                "PC-Visibility",
+                "PC-Type"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "title": "SpecIF:Collection"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition.",
+            "icon": "&#9635;",
+            "id": "RC-Diagram",
+            "instantiation": [
+                "auto"
+            ],
+            "propertyClasses": [
+                "PC-Name",
+                "PC-Description",
+                "PC-Visibility",
+                "PC-Type"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "title": "SpecIF:Diagram"
+        },
+        {
+            "changedAt": "2019-09-10T08:59:00+02:00",
+            "description": "An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.",
+            "icon": "&#9632;",
+            "id": "RC-Actor",
+            "instantiation": [
+                "auto"
+            ],
+            "propertyClasses": [
+                "PC-Name",
+                "PC-Description",
+                "PC-Visibility",
+                "PC-Type",
+                "PC-Stereotype"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "title": "FMC:Actor"
+        },
+        {
+            "changedAt": "2019-09-10T08:59:00+02:00",
+            "description": "A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape.",
+            "icon": "&#9679;",
+            "id": "RC-State",
+            "instantiation": [
+                "auto"
+            ],
+            "propertyClasses": [
+                "PC-Name",
+                "PC-Description",
+                "PC-Visibility",
+                "PC-Type",
+                "PC-Stereotype"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "title": "FMC:State"
+        },
+        {
+            "changedAt": "2019-09-10T08:59:00+02:00",
+            "description": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive.",
+            "icon": "&#9830;",
+            "id": "RC-Event",
+            "instantiation": [
+                "auto"
+            ],
+            "propertyClasses": [
+                "PC-Name",
+                "PC-Description",
+                "PC-Visibility",
+                "PC-Type",
+                "PC-Stereotype"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "title": "FMC:Event"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "Root node of a hierarchically organized specification (outline).",
+            "id": "RC-Hierarchy",
+            "propertyClasses": [
+                "PC-Name",
+                "PC-Description"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "title": "SpecIF:Hierarchy"
+        }
+    ],
+    "resources": [
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-8f1393ff-cd82-4c77-80a2-4f5d2a42e37c",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "CabinProcess"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:Activity"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-1"
+                }
+            ],
+            "title": "CabinProcess"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Diagram",
+            "id": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "CabinProcess"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:Diagram"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "CabinProcess"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Collection",
+            "id": "R-d6d749c9-a75b-4df6-afd2-db2b46a360b9",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Model_CabinProcess"
+                },
+                {
+                    "class": "PC-Description",
+                    "title": "dcterms:description",
+                    "value": "Author:s-sruesch.\nCreated:01.10.2012 15:10.\nTitle:.\nComment:.\n"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:Model"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-1"
+                }
+            ],
+            "title": "Model_CabinProcess"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-a380d9dc-f5a7-4dd4-b763-b6a2c12e70e2",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Check Systems"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Check Systems"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-4f6bc3c9-7604-47e6-ad96-7fecb0473caf",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Check Areas"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Check Areas"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-9570a550-bc00-4318-8c33-de99285d7ba2",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Report"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Report"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-754fdeae-fec1-4bfb-adb0-c81b25a67db0",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Preflight Briefing"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Preflight Briefing"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-426170c5-a33b-48dc-917e-adf6e22684b8",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Boarding of Crew"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Boarding of Crew"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-a28f784a-6c37-4551-aa54-cef47482bc67",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Positioning for boarding"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Positioning for boarding"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-985619df-bf62-4eb5-ad8b-a79b9288e8d0",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Coordinate and Monitor Boarding"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Coordinate and Monitor Boarding"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-0452af23-9f93-4632-829c-3683c081d848",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Check cabin after boarding"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Check cabin after boarding"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-037eafc6-4b81-480b-923b-4e02d44acec4",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Close Boarding"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:CallBehaviorAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Close Boarding"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-99e6aa2f-34fc-40e8-91d1-dadd4d6fd8e1",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "NoName"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:ForkNode"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Actor",
+            "id": "R-904b7762-e248-4f4a-9c5a-0e56ce786119",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "Send Signal ReadytoBoard"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:SendSignalAction"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "Send Signal ReadytoBoard"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Event",
+            "id": "R-0d23903e-ab07-44b7-beca-6437c8a6eb5d",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "NoName"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:InitialNode"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Event",
+            "id": "R-85b2d7be-4e84-4bc8-b9bf-1ac9932f8200",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "NoName"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:ActivityFinalNode"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-0"
+                }
+            ],
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "RC-Event",
+            "id": "R-0b1af485-55c3-49d0-81c1-5c5fbac4b43c",
+            "properties": [
+                {
+                    "class": "PC-Name",
+                    "title": "dcterms:title",
+                    "value": "ReadytoBoard_Signal"
+                },
+                {
+                    "class": "PC-Type",
+                    "title": "dcterms:type",
+                    "value": "uml:Signal"
+                },
+                {
+                    "class": "PC-Visibility",
+                    "title": "SpecIF:Visibility",
+                    "value": "V-VisibilityKind-1"
+                }
+            ],
+            "title": "ReadytoBoard_Signal"
+        }
+    ],
+    "specifVersion": "0.10.8",
+    "statementClasses": [
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "Statement: Plan resp. diagram shows Model-Element",
+            "id": "SC-shows",
+            "instantiation": [
+                "auto"
+            ],
+            "objectClasses": [
+                "RC-Actor",
+                "RC-State",
+                "RC-Event"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Diagram"
+            ],
+            "title": "SpecIF:shows"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "Statement: Model-Element contains Model-Element",
+            "id": "SC-contains",
+            "instantiation": [
+                "auto",
+                "user"
+            ],
+            "objectClasses": [
+                "RC-Actor",
+                "RC-State",
+                "RC-Event"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Actor",
+                "RC-State",
+                "RC-Event"
+            ],
+            "title": "SpecIF:contains"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "Statement: Actor (Role, Function) writes State (Information)",
+            "id": "SC-writes",
+            "instantiation": [
+                "auto"
+            ],
+            "objectClasses": [
+                "RC-State"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Actor"
+            ],
+            "title": "SpecIF:writes"
+        },
+        {
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "description": "Statement: Actor (Role, Function) reads State (Information)",
+            "id": "SC-reads",
+            "instantiation": [
+                "auto"
+            ],
+            "objectClasses": [
+                "RC-State"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Actor"
+            ],
+            "title": "SpecIF:reads"
+        },
+        {
+            "changedAt": "2019-08-20T20:32:25+02:00",
+            "description": "A FMC:Actor 'signals' a FMC:Event.",
+            "id": "SC-signals",
+            "instantiation": [
+                "auto"
+            ],
+            "objectClasses": [
+                "RC-Event"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Actor"
+            ],
+            "title": "SpecIF:signals"
+        },
+        {
+            "changedAt": "2019-08-20T20:32:25+02:00",
+            "description": "A FMC:Event 'triggers' a FMC:Actor.",
+            "id": "SC-triggers",
+            "instantiation": [
+                "auto"
+            ],
+            "objectClasses": [
+                "RC-Actor"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Event"
+            ],
+            "title": "SpecIF:triggers"
+        },
+        {
+            "changedAt": "2019-08-20T20:32:25+02:00",
+            "description": "A FMC:Actor 'precedes' a FMC:Event.",
+            "id": "SC-precedes",
+            "instantiation": [
+                "auto"
+            ],
+            "objectClasses": [
+                "RC-Actor"
+            ],
+            "replaces": [],
+            "revision": "main/1",
+            "subjectClasses": [
+                "RC-Actor"
+            ],
+            "title": "SpecIF:precedes"
+        }
+    ],
+    "statements": [
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-triggers",
+            "id": "S-c4ff6cc9-030f-4738-88be-ae124172f17a",
+            "object": "R-754fdeae-fec1-4bfb-adb0-c81b25a67db0",
+            "subject": "R-0d23903e-ab07-44b7-beca-6437c8a6eb5d",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-65ca7d6c-ae6e-42a7-b580-2e6c64fa5dcf",
+            "object": "R-426170c5-a33b-48dc-917e-adf6e22684b8",
+            "subject": "R-754fdeae-fec1-4bfb-adb0-c81b25a67db0",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-49644156-88c8-4267-89d4-e08e419e87fa",
+            "object": "R-4f6bc3c9-7604-47e6-ad96-7fecb0473caf",
+            "subject": "R-a380d9dc-f5a7-4dd4-b763-b6a2c12e70e2",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-a0d47dcc-72fc-4f6f-ae06-29fccf752d32",
+            "object": "R-9570a550-bc00-4318-8c33-de99285d7ba2",
+            "subject": "R-4f6bc3c9-7604-47e6-ad96-7fecb0473caf",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-438ce05b-2092-421b-ac8b-a5c0d3325c27",
+            "object": "R-a28f784a-6c37-4551-aa54-cef47482bc67",
+            "subject": "R-9570a550-bc00-4318-8c33-de99285d7ba2",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-a7bb577f-c3c7-4844-803a-f32b8b9e6dcf",
+            "object": "R-0452af23-9f93-4632-829c-3683c081d848",
+            "subject": "R-985619df-bf62-4eb5-ad8b-a79b9288e8d0",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-signals",
+            "id": "S-9d809a43-b589-443a-b818-76cb13428e22",
+            "object": "R-85b2d7be-4e84-4bc8-b9bf-1ac9932f8200",
+            "subject": "R-037eafc6-4b81-480b-923b-4e02d44acec4",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-5a0e1d47-a4bb-4450-9699-9f0063b0290b",
+            "object": "R-904b7762-e248-4f4a-9c5a-0e56ce786119",
+            "subject": "R-99e6aa2f-34fc-40e8-91d1-dadd4d6fd8e1",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-cfd2ef14-386a-4b28-8092-90eb48a2891d",
+            "object": "R-037eafc6-4b81-480b-923b-4e02d44acec4",
+            "subject": "R-0452af23-9f93-4632-829c-3683c081d848",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-97526aec-0184-429d-aba4-d4e65fa16327",
+            "object": "R-985619df-bf62-4eb5-ad8b-a79b9288e8d0",
+            "subject": "R-99e6aa2f-34fc-40e8-91d1-dadd4d6fd8e1",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-c1070666-0c8a-4896-836b-c92c4621f8a6",
+            "object": "R-99e6aa2f-34fc-40e8-91d1-dadd4d6fd8e1",
+            "subject": "R-a28f784a-6c37-4551-aa54-cef47482bc67",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-precedes",
+            "id": "S-e25d23ef-d8d8-4f3b-91b3-1b38b4205ab2",
+            "object": "R-a380d9dc-f5a7-4dd4-b763-b6a2c12e70e2",
+            "subject": "R-426170c5-a33b-48dc-917e-adf6e22684b8",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-signals",
+            "id": "S-f681cfb3-612c-4f92-b0e9-4f1a9aba5412",
+            "object": "R-0b1af485-55c3-49d0-81c1-5c5fbac4b43c",
+            "subject": "R-904b7762-e248-4f4a-9c5a-0e56ce786119",
+            "title": "ReadytoBoard_Signal"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-c6c9f868-0caf-4ad4-8bbd-34aa50444943",
+            "object": "R-426170c5-a33b-48dc-917e-adf6e22684b8",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-b5b8eb57-21ba-47dc-8f1b-4b61de600c79",
+            "object": "R-0d23903e-ab07-44b7-beca-6437c8a6eb5d",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-e4fdd2fe-1ccc-4bd0-9700-2366eebb055b",
+            "object": "R-0452af23-9f93-4632-829c-3683c081d848",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-ff8e0116-55ff-49ab-9fd2-b16cdc67d8ef",
+            "object": "R-a380d9dc-f5a7-4dd4-b763-b6a2c12e70e2",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-6ec702fc-742b-4181-8601-33614c84e024",
+            "object": "R-904b7762-e248-4f4a-9c5a-0e56ce786119",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-047df08a-2fb2-4abf-a964-1403610133d7",
+            "object": "R-9570a550-bc00-4318-8c33-de99285d7ba2",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-bd6a61fe-b136-4042-a6eb-cf68c548fe30",
+            "object": "R-037eafc6-4b81-480b-923b-4e02d44acec4",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-1c9c6487-a5d2-473d-bb22-96ef8392466f",
+            "object": "R-985619df-bf62-4eb5-ad8b-a79b9288e8d0",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-ce30840b-f66b-4585-8433-82f63fa72b32",
+            "object": "R-754fdeae-fec1-4bfb-adb0-c81b25a67db0",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-d74140a4-d874-4a93-8460-09875fee6052",
+            "object": "R-85b2d7be-4e84-4bc8-b9bf-1ac9932f8200",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-59894733-45ef-4db7-bde4-e6d4db2fb9d6",
+            "object": "R-99e6aa2f-34fc-40e8-91d1-dadd4d6fd8e1",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-b2307a41-6a7f-41df-a08a-c1af02e6f5a4",
+            "object": "R-4f6bc3c9-7604-47e6-ad96-7fecb0473caf",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        },
+        {
+            "changedAt": "2020-02-13T12:27:51+02:00",
+            "class": "SC-shows",
+            "id": "S-49acf691-665d-4bb3-b325-e2b3ee747b1c",
+            "object": "R-a28f784a-6c37-4551-aa54-cef47482bc67",
+            "subject": "R-2ccaed49-6383-4755-9f30-d47c51ac0aa6",
+            "title": "NoName"
+        }
+    ],
+    "title": "Model_Template"
+}

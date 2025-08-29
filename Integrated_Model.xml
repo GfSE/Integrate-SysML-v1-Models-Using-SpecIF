@@ -1,0 +1,268 @@
+<?xml version="1.0" ?>
+<xmi:XMI xmlns:MD_Customization_for_Requirements__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/Requirements" xmlns:MD_Customization_for_SysML__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/SysML" xmlns:StandardProfile="http://www.omg.org/spec/UML/20131001/StandardProfile" xmlns:sysml="http://www.omg.org/spec/SysML/20150709/SysML" xmlns:uml="http://www.omg.org/spec/UML/20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001">
+  
+    
+  <xmi:documentation xmi:type="xmi:Documentation">
+    
+      
+    <xmi:exporter>MagicDraw Clean XMI Exporter</xmi:exporter>
+    
+      
+    <xmi:exporterVersion>18.5</xmi:exporterVersion>
+    
+    
+  </xmi:documentation>
+  
+        
+
+  <uml:Model name="Integriertes Modell" xmi:id="R-377ca89f-3032-4dd2-b4af-9a70083bddb5" xmi:type="uml:Model">
+    <packagedElement name="ReadytoBoard_Signal" xmi:id="R-68ead840-51a1-4ea7-8413-040bccc94092" xmi:type="uml:Signal"/>
+    <packagedElement signal="R-68ead840-51a1-4ea7-8413-040bccc94092" xmi:id="64ef246e-2155-4db2-ab6d-5216150c9865" xmi:type="uml:SignalEvent"/>
+    <packagedElement name="CabinProcess" xmi:id="R-ab4346f8-f602-490f-aa57-cc42979987ac" xmi:type="uml:Activity">
+      <node name="Check Systems" visibility="public" xmi:id="R-8be81848-c55c-4d8b-8bdc-6a8abe781459" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Check Areas" visibility="public" xmi:id="R-16a35396-455b-46d0-bd4c-9781f0fa9935" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Report" visibility="public" xmi:id="R-fd675ed1-cf11-4356-ba56-499d7f83b5f9" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Preflight Briefing" visibility="public" xmi:id="R-34cfa03a-d191-47c4-b604-b4070ac364aa" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Boarding of Crew" visibility="public" xmi:id="R-c66c7e81-a696-459e-8c54-b54e5069312f" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Positioning for boarding" visibility="public" xmi:id="R-9dd7bd9c-e183-4199-a891-e545da5f182b" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Coordinate and Monitor Boarding" visibility="public" xmi:id="R-22e120ac-d165-4d6d-839b-22ce90e84683" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Check cabin after boarding" visibility="public" xmi:id="R-7837d02d-e565-4828-a1b7-66f690903bfb" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Close Boarding" visibility="public" xmi:id="R-02b1a9c9-8dc8-44bf-b5f7-59c9334e100f" xmi:type="uml:CallBehaviorAction"/>
+      <node name="uml:ForkNode R-d74243ce-1329-44ae-bc57-af833eb4292b" visibility="public" xmi:id="R-d74243ce-1329-44ae-bc57-af833eb4292b" xmi:type="uml:ForkNode"/>
+      <node name="Send Signal ReadytoBoard" signal="R-68ead840-51a1-4ea7-8413-040bccc94092" visibility="public" xmi:id="R-c724e3fe-69c8-4aed-bd2b-2bfe4617ba53" xmi:type="uml:SendSignalAction"/>
+      <node name="uml:InitialNode R-19158fab-f7a9-4796-a1d2-5e6e8a2de5e9" visibility="public" xmi:id="R-19158fab-f7a9-4796-a1d2-5e6e8a2de5e9" xmi:type="uml:InitialNode"/>
+      <node name="uml:ActivityFinalNode R-98c490ec-d91d-4199-93fb-f39e556747c1" visibility="public" xmi:id="R-98c490ec-d91d-4199-93fb-f39e556747c1" xmi:type="uml:ActivityFinalNode"/>
+      <edge source="R-19158fab-f7a9-4796-a1d2-5e6e8a2de5e9" target="R-34cfa03a-d191-47c4-b604-b4070ac364aa" xmi:id="S-2440f302-0e46-4111-91e8-4be8f5ada435" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="71915339-9d00-42fd-84d7-453335ed49a1" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-34cfa03a-d191-47c4-b604-b4070ac364aa" target="R-c66c7e81-a696-459e-8c54-b54e5069312f" xmi:id="S-7562ce4c-2ea0-4820-b5de-d8d2f642c5c7" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="08418fde-e1a2-433e-8199-9baf8b41d087" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-8be81848-c55c-4d8b-8bdc-6a8abe781459" target="R-16a35396-455b-46d0-bd4c-9781f0fa9935" xmi:id="S-dd243dff-f1fe-47af-81ef-f3467fd7d75e" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="67f32a2a-9589-4340-8a72-96954277aef6" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-16a35396-455b-46d0-bd4c-9781f0fa9935" target="R-fd675ed1-cf11-4356-ba56-499d7f83b5f9" xmi:id="S-a1c9cde3-3c6b-48e6-b0dd-29058a29924b" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="07571260-6000-4839-8277-a38aadc61e50" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-fd675ed1-cf11-4356-ba56-499d7f83b5f9" target="R-9dd7bd9c-e183-4199-a891-e545da5f182b" xmi:id="S-d422584c-ccb7-4772-9e77-a189063d8d7e" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="f22935ce-05ea-49db-a41b-09264dc2d24f" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-22e120ac-d165-4d6d-839b-22ce90e84683" target="R-7837d02d-e565-4828-a1b7-66f690903bfb" xmi:id="S-8460e64c-566e-49f7-8eb7-b7b662bb218a" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="de8d142d-f0e0-405d-adbe-a4a8080a7513" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-02b1a9c9-8dc8-44bf-b5f7-59c9334e100f" target="R-98c490ec-d91d-4199-93fb-f39e556747c1" xmi:id="S-1132df18-f50e-4b78-8db0-384d6d12fe78" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="e7528f27-db30-4713-9da8-453a2c3f5d55" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-d74243ce-1329-44ae-bc57-af833eb4292b" target="R-c724e3fe-69c8-4aed-bd2b-2bfe4617ba53" xmi:id="S-c4ca25f2-35f0-4e28-8d2b-f043b1d1e8d8" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="05983445-95fa-430c-abaf-98b549b32119" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-7837d02d-e565-4828-a1b7-66f690903bfb" target="R-02b1a9c9-8dc8-44bf-b5f7-59c9334e100f" xmi:id="S-c593f4d3-e4a5-41f9-a61e-dc1c850bc720" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="4ea216e0-9f38-48a5-b080-679f6ce012b8" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-d74243ce-1329-44ae-bc57-af833eb4292b" target="R-22e120ac-d165-4d6d-839b-22ce90e84683" xmi:id="S-217feb78-650e-4cc1-bf3e-b303aa4c71b3" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="4a45aa69-650f-4da2-be04-456793c62a30" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-9dd7bd9c-e183-4199-a891-e545da5f182b" target="R-d74243ce-1329-44ae-bc57-af833eb4292b" xmi:id="S-51b86e06-6583-4667-beb3-555c369bb01c" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="2dbe2aab-e94f-4320-ac6c-653cd9e9030c" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-c66c7e81-a696-459e-8c54-b54e5069312f" target="R-8be81848-c55c-4d8b-8bdc-6a8abe781459" xmi:id="S-27533785-6b92-4bd8-9524-496c50fdcba6" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="13799d22-0d94-47f5-9a68-5d6ed81c5ffc" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+    </packagedElement>
+    <packagedElement name="AirportProcess" xmi:id="R-7b505110-dbb8-497f-9f2e-af772f1ed3e5" xmi:type="uml:Activity">
+      <node name="provide flight information" visibility="public" xmi:id="R-9870cbc8-82e4-47eb-afc0-535d136919cc" xmi:type="uml:CallBehaviorAction">
+        <result name="uml:OutputPin R-7be64e1e-7ef2-4eb8-8e5f-9b4fc8a5d788" visibility="public" xmi:id="R-7be64e1e-7ef2-4eb8-8e5f-9b4fc8a5d788" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="hand over baggage" visibility="public" xmi:id="R-474cd535-b9b5-40fb-b617-aae1fe921b88" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-256076da-614c-4c2f-9c42-f9434d933314" visibility="public" xmi:id="R-256076da-614c-4c2f-9c42-f9434d933314" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-c9ef2015-1b11-4bc5-9bbc-f187331d720d" visibility="public" xmi:id="R-c9ef2015-1b11-4bc5-9bbc-f187331d720d" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="Fork" visibility="public" xmi:id="R-7d40bbb6-e87d-4eff-9b98-841d8bd308e1" xmi:type="uml:ForkNode"/>
+      <node name="registration of Passenger" visibility="public" xmi:id="R-8cf6b9cf-cf6a-4bf3-8b9f-3385cda42428" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-a5ca7d1f-3bb9-4763-9471-d1b3e0b47320" visibility="public" xmi:id="R-a5ca7d1f-3bb9-4763-9471-d1b3e0b47320" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-f7dad4de-8410-4596-abb9-c7688ecab88c" visibility="public" xmi:id="R-f7dad4de-8410-4596-abb9-c7688ecab88c" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="check in baggage" visibility="public" xmi:id="R-2c2fcd9a-af06-4b80-9634-8cf0ea542733" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-a03f6562-6341-4cf9-a989-582a5fe326be" visibility="public" xmi:id="R-a03f6562-6341-4cf9-a989-582a5fe326be" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-207f6369-061f-4582-90eb-2f131f445c6e" visibility="public" xmi:id="R-207f6369-061f-4582-90eb-2f131f445c6e" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="security check" visibility="public" xmi:id="R-fb244232-ca10-45da-8120-1357dbb37602" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-10fcd591-929d-4d2d-90b4-415c61256529" visibility="public" xmi:id="R-10fcd591-929d-4d2d-90b4-415c61256529" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-786d85d7-bcf3-4765-8378-ba6f12d352e9" visibility="public" xmi:id="R-786d85d7-bcf3-4765-8378-ba6f12d352e9" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="baggage security check" visibility="public" xmi:id="R-268b21b7-9eda-41cc-9025-8e2d8ccec10e" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-7b75e063-d629-42ae-b8d3-76eceb7ccb79" visibility="public" xmi:id="R-7b75e063-d629-42ae-b8d3-76eceb7ccb79" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-0f0d98f0-1923-4da8-aec3-e7b60b8cd5f0" visibility="public" xmi:id="R-0f0d98f0-1923-4da8-aec3-e7b60b8cd5f0" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="border control" visibility="public" xmi:id="R-ad91ded8-dea3-4a9d-806c-a50a37a368fe" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-243a6ebc-0ae9-4f64-8d4d-1c25e178b755" visibility="public" xmi:id="R-243a6ebc-0ae9-4f64-8d4d-1c25e178b755" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-3bf67f53-b145-45ac-87aa-b1aeff5d99ad" visibility="public" xmi:id="R-3bf67f53-b145-45ac-87aa-b1aeff5d99ad" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="uml:MergeNode R-8da17d7f-141e-4b98-9a26-b949e61b0bc7" visibility="public" xmi:id="R-8da17d7f-141e-4b98-9a26-b949e61b0bc7" xmi:type="uml:MergeNode"/>
+      <node name="Board Passenger" visibility="public" xmi:id="R-41d87d93-5a51-4414-96ab-838b9b2d831e" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-305a6bba-e8c9-42b7-82a1-e6b5a2407876" visibility="public" xmi:id="R-305a6bba-e8c9-42b7-82a1-e6b5a2407876" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-996a7ceb-e5e9-447b-83a1-3a6693d6edbd" visibility="public" xmi:id="R-996a7ceb-e5e9-447b-83a1-3a6693d6edbd" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="Join2" visibility="public" xmi:id="R-b0b15d5e-247d-458a-ba4b-d388ec1b6bb6" xmi:type="uml:JoinNode"/>
+      <node name="Airline perform flight" visibility="public" xmi:id="R-dfd0d2b0-7a84-48c1-9629-55fd691075ff" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-45148bd6-1eb8-4789-905b-f63de1488efc" visibility="public" xmi:id="R-45148bd6-1eb8-4789-905b-f63de1488efc" xmi:type="uml:InputPin"/>
+      </node>
+      <node name="Baggage Handling System" visibility="public" xmi:id="R-f580636d-5f84-4e9e-8e46-92b7bcc5b9b0" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-dd8e7c3f-2bcd-4317-857a-71abfe127dda" visibility="public" xmi:id="R-dd8e7c3f-2bcd-4317-857a-71abfe127dda" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-3b88cb31-5952-4545-921d-d2908c27b9c3" visibility="public" xmi:id="R-3b88cb31-5952-4545-921d-d2908c27b9c3" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="Ground Handling Service build up bulk baggage cart" visibility="public" xmi:id="R-ad159c19-71f4-4773-ba41-9738cec4fdff" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-3541d240-105d-4818-949d-87c057aff000" visibility="public" xmi:id="R-3541d240-105d-4818-949d-87c057aff000" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-37e6c947-1bc8-47bf-8a8b-2b619d049ac5" visibility="public" xmi:id="R-37e6c947-1bc8-47bf-8a8b-2b619d049ac5" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="build up Unit Load Devices" visibility="public" xmi:id="R-6320af37-463e-44e8-a1d4-5e859090ee39" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-4fc2f7a8-7cb9-4567-a977-57b73a817b5e" visibility="public" xmi:id="R-4fc2f7a8-7cb9-4567-a977-57b73a817b5e" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-65e7e87c-416c-41b5-b6fb-4a07dc4d2105" visibility="public" xmi:id="R-65e7e87c-416c-41b5-b6fb-4a07dc4d2105" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="Merge" visibility="public" xmi:id="R-085efbcb-dabd-404a-b937-0fe95339fbcb" xmi:type="uml:MergeNode"/>
+      <node name="Transport Unit Load Devices to parking position" visibility="public" xmi:id="R-97315db2-67ef-4092-85fa-7986551302b5" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-0540b7f7-adaf-420e-b422-af5e67b71923" visibility="public" xmi:id="R-0540b7f7-adaf-420e-b422-af5e67b71923" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-a9775afb-f759-4d9f-b467-7b55eef78a2e" visibility="public" xmi:id="R-a9775afb-f759-4d9f-b467-7b55eef78a2e" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="Ground Handling Service Load Baggage" visibility="public" xmi:id="R-61466046-f002-4b85-b3aa-8c78a282ba73" xmi:type="uml:CallBehaviorAction">
+        <argument name="uml:InputPin R-840f9e69-4d76-45c9-81c4-8d62d4b2bd6d" visibility="public" xmi:id="R-840f9e69-4d76-45c9-81c4-8d62d4b2bd6d" xmi:type="uml:InputPin"/>
+        <result name="uml:OutputPin R-a9f64978-3035-4f37-b6dc-c2dfde13f07e" visibility="public" xmi:id="R-a9f64978-3035-4f37-b6dc-c2dfde13f07e" xmi:type="uml:OutputPin"/>
+      </node>
+      <node behavior="R-ab4346f8-f602-490f-aa57-cc42979987ac" name="CabinProcess" visibility="public" xmi:id="R-6ec6ee03-8360-4e15-a455-11f2f7ef1959" xmi:type="uml:CallBehaviorAction"/>
+      <node name="Ready for Boarding" visibility="public" xmi:id="R-3ecd1fa1-129b-40d7-a726-2c0eeea5045f" xmi:type="uml:AcceptEventAction">
+        <trigger event="64ef246e-2155-4db2-ab6d-5216150c9865" xmi:id="2f0d6ba8-b560-43ba-bbda-e1b61d7020a4" xmi:type="uml:Trigger"/>
+        <result name="uml:OutputPin R-319b5d61-0e4d-4686-8909-a1fec5c7b4be" visibility="public" xmi:id="R-319b5d61-0e4d-4686-8909-a1fec5c7b4be" xmi:type="uml:OutputPin"/>
+      </node>
+      <node name="Join1" visibility="public" xmi:id="R-8b80cd2c-8bae-4160-8d38-fcaf229f55ec" xmi:type="uml:JoinNode"/>
+      <node name="Passenger Handling" visibility="public" xmi:id="R-27cd43c2-23f8-4621-9ddd-b5a0bcefa7b0" xmi:type="uml:ActivityPartition">
+        <node xmi:idref="R-96f49cde-a389-4216-8cec-717e1de29045"/>
+        <node xmi:idref="R-c787d73e-2223-4d08-961d-e1692959063d"/>
+        <node xmi:idref="R-d40e1e83-e46a-4ac6-9044-24045398829d"/>
+        <node xmi:idref="R-8da17d7f-141e-4b98-9a26-b949e61b0bc7"/>
+        <node xmi:idref="R-8cf6b9cf-cf6a-4bf3-8b9f-3385cda42428"/>
+        <node xmi:idref="R-fb244232-ca10-45da-8120-1357dbb37602"/>
+        <node xmi:idref="R-db720a37-410d-4b6e-ba54-335f20f1be54"/>
+        <node xmi:idref="R-6345af52-6fdc-40a5-9c4f-0ede16b03fcd"/>
+        <node xmi:idref="R-0cd79481-ef37-47d6-8351-481fde0fd5a7"/>
+        <node xmi:idref="R-ad91ded8-dea3-4a9d-806c-a50a37a368fe"/>
+        <node xmi:idref="R-3ecd1fa1-129b-40d7-a726-2c0eeea5045f"/>
+        <node xmi:idref="R-41d87d93-5a51-4414-96ab-838b9b2d831e"/>
+      </node>
+      <partition xmi:idref="R-27cd43c2-23f8-4621-9ddd-b5a0bcefa7b0"/>
+      <node name="Bagage Handling" visibility="public" xmi:id="R-0f855246-f55c-4c4d-ad35-70f014215165" xmi:type="uml:ActivityPartition">
+        <node xmi:idref="R-e89156c3-0b3c-43b9-bb62-443f89bdc9a3"/>
+        <node xmi:idref="R-43458eec-b4d3-4cf7-9553-248c3ae8300d"/>
+        <node xmi:idref="R-84a22798-7eb4-43f7-8a0b-bfc206d79a20"/>
+        <node xmi:idref="R-6320af37-463e-44e8-a1d4-5e859090ee39"/>
+        <node xmi:idref="R-2c2fcd9a-af06-4b80-9634-8cf0ea542733"/>
+        <node xmi:idref="R-f580636d-5f84-4e9e-8e46-92b7bcc5b9b0"/>
+        <node xmi:idref="R-61466046-f002-4b85-b3aa-8c78a282ba73"/>
+        <node xmi:idref="R-268b21b7-9eda-41cc-9025-8e2d8ccec10e"/>
+        <node xmi:idref="R-97315db2-67ef-4092-85fa-7986551302b5"/>
+        <node xmi:idref="R-ad159c19-71f4-4773-ba41-9738cec4fdff"/>
+        <node xmi:idref="R-7ab152e4-fd46-4ed3-ab1f-588ab84ccacb"/>
+        <node xmi:idref="R-643895db-88c8-4071-9ee3-21c60a0db3a6"/>
+        <node xmi:idref="R-2e55ce6b-8a28-4a14-b2eb-af9f49efdc18"/>
+        <node xmi:idref="R-085efbcb-dabd-404a-b937-0fe95339fbcb"/>
+      </node>
+      <partition xmi:idref="R-0f855246-f55c-4c4d-ad35-70f014215165"/>
+      <node name="uml:ActivityFinalNode R-cff8cccc-c718-4566-987c-da9cc4afad7c" visibility="public" xmi:id="R-cff8cccc-c718-4566-987c-da9cc4afad7c" xmi:type="uml:ActivityFinalNode"/>
+      <node name="uml:InitialNode R-93b07a3b-9716-418f-a49a-de4eaaec3587" visibility="public" xmi:id="R-93b07a3b-9716-418f-a49a-de4eaaec3587" xmi:type="uml:InitialNode"/>
+      <node name="shengen Passenger travelling into shengen-country? R-db720a37-410d-4b6e-ba54-335f20f1be54" visibility="public" xmi:id="R-db720a37-410d-4b6e-ba54-335f20f1be54" xmi:type="uml:DecisionNode"/>
+      <node name="Ground Handling Service build up? R-7ab152e4-fd46-4ed3-ab1f-588ab84ccacb" visibility="public" xmi:id="R-7ab152e4-fd46-4ed3-ab1f-588ab84ccacb" xmi:type="uml:DecisionNode"/>
+      <edge name="uml:ObjectFlow R-85178790-88ab-4da8-b3d7-e836021892c5" source="R-7be64e1e-7ef2-4eb8-8e5f-9b4fc8a5d788" target="R-256076da-614c-4c2f-9c42-f9434d933314" visibility="public" xmi:id="R-85178790-88ab-4da8-b3d7-e836021892c5" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="3e3907db-81f6-481c-98c2-036c5bf31a3a" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-66d6ec78-4152-434a-984d-ed5abe8756a1" source="R-c9ef2015-1b11-4bc5-9bbc-f187331d720d" target="R-7d40bbb6-e87d-4eff-9b98-841d8bd308e1" visibility="public" xmi:id="R-66d6ec78-4152-434a-984d-ed5abe8756a1" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="550b8870-d445-4800-ae9d-ced15a91ef6d" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-1f22f535-4c9d-4cee-b743-573de1111ccc" source="R-7d40bbb6-e87d-4eff-9b98-841d8bd308e1" target="R-a5ca7d1f-3bb9-4763-9471-d1b3e0b47320" visibility="public" xmi:id="R-1f22f535-4c9d-4cee-b743-573de1111ccc" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="949b3555-726a-4d1d-afe8-69d3dfaaa9d4" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-093c4d80-5158-4afc-8c81-f2fe13a20051" source="R-7d40bbb6-e87d-4eff-9b98-841d8bd308e1" target="R-a03f6562-6341-4cf9-a989-582a5fe326be" visibility="public" xmi:id="R-093c4d80-5158-4afc-8c81-f2fe13a20051" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="7c9e4c95-a0e1-4d10-b39d-a9f4dc9a7ac0" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-c06add13-d722-4aaf-b34e-cacbf5b3ce18" source="R-207f6369-061f-4582-90eb-2f131f445c6e" target="R-7b75e063-d629-42ae-b8d3-76eceb7ccb79" visibility="public" xmi:id="R-c06add13-d722-4aaf-b34e-cacbf5b3ce18" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="985af0a0-feae-4d43-95c5-9e68a090ea0b" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-c7ce3c0e-b316-47be-aa82-dc9e0451204b" source="R-f7dad4de-8410-4596-abb9-c7688ecab88c" target="R-10fcd591-929d-4d2d-90b4-415c61256529" visibility="public" xmi:id="R-c7ce3c0e-b316-47be-aa82-dc9e0451204b" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="3cf6b2b7-69e2-43a3-ac6e-470a285557b6" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-b8f69021-433c-47ff-afc3-24170b4dfff5" source="R-3bf67f53-b145-45ac-87aa-b1aeff5d99ad" target="R-8da17d7f-141e-4b98-9a26-b949e61b0bc7" visibility="public" xmi:id="R-b8f69021-433c-47ff-afc3-24170b4dfff5" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="5caa0d88-b46f-48bc-94c4-1c71d226bead" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-1978714c-8fb0-4b7f-a5e8-75dea25bd7a4" source="R-b0b15d5e-247d-458a-ba4b-d388ec1b6bb6" target="R-45148bd6-1eb8-4789-905b-f63de1488efc" visibility="public" xmi:id="R-1978714c-8fb0-4b7f-a5e8-75dea25bd7a4" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="29ad2901-016f-4d6f-a774-196ffbc36a79" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-2b9eb992-2d2f-4766-a47f-f796be9032a6" source="R-0f0d98f0-1923-4da8-aec3-e7b60b8cd5f0" target="R-dd8e7c3f-2bcd-4317-857a-71abfe127dda" visibility="public" xmi:id="R-2b9eb992-2d2f-4766-a47f-f796be9032a6" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="16c6ed94-7a83-4076-a950-d3896e9dee04" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-fd015af1-ace8-4115-8c0c-96e9857bff5b" source="R-37e6c947-1bc8-47bf-8a8b-2b619d049ac5" target="R-085efbcb-dabd-404a-b937-0fe95339fbcb" visibility="public" xmi:id="R-fd015af1-ace8-4115-8c0c-96e9857bff5b" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="fb142097-37cb-4e22-86d5-70ff414f6cd0" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-e38c3857-79bf-4951-9982-d31955c69aff" source="R-65e7e87c-416c-41b5-b6fb-4a07dc4d2105" target="R-085efbcb-dabd-404a-b937-0fe95339fbcb" visibility="public" xmi:id="R-e38c3857-79bf-4951-9982-d31955c69aff" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="6e40e648-5251-4b34-a903-5b1d0702445c" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-0a539b48-fa22-4dd7-996e-348becb0eaf7" source="R-a9f64978-3035-4f37-b6dc-c2dfde13f07e" target="R-b0b15d5e-247d-458a-ba4b-d388ec1b6bb6" visibility="public" xmi:id="R-0a539b48-fa22-4dd7-996e-348becb0eaf7" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="e64d4db6-797b-449a-9805-5870999ba316" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-9cce8d51-b325-4d94-8fb5-af07a85ad290" source="R-a9775afb-f759-4d9f-b467-7b55eef78a2e" target="R-840f9e69-4d76-45c9-81c4-8d62d4b2bd6d" visibility="public" xmi:id="R-9cce8d51-b325-4d94-8fb5-af07a85ad290" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="24aa5fe4-8379-4e32-8fdd-f7ac6f516ce4" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-84a22798-7eb4-43f7-8a0b-bfc206d79a20" source="R-085efbcb-dabd-404a-b937-0fe95339fbcb" target="R-0540b7f7-adaf-420e-b422-af5e67b71923" visibility="public" xmi:id="R-84a22798-7eb4-43f7-8a0b-bfc206d79a20" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="99ff6da4-243a-4344-b875-21aa13345d2e" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-1da5d190-4889-4241-b0fc-13860660630f" source="R-319b5d61-0e4d-4686-8909-a1fec5c7b4be" target="R-8b80cd2c-8bae-4160-8d38-fcaf229f55ec" visibility="public" xmi:id="R-1da5d190-4889-4241-b0fc-13860660630f" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="0a29df8e-5c2a-47ae-8cdd-4848688db13a" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-96f49cde-a389-4216-8cec-717e1de29045" source="R-8da17d7f-141e-4b98-9a26-b949e61b0bc7" target="R-8b80cd2c-8bae-4160-8d38-fcaf229f55ec" visibility="public" xmi:id="R-96f49cde-a389-4216-8cec-717e1de29045" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="c9d9881d-9d2c-471a-8a12-5a400a5e1ae4" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-20a0dd2c-ab76-44bc-94cc-2c2d8d7f1220" source="R-8b80cd2c-8bae-4160-8d38-fcaf229f55ec" target="R-305a6bba-e8c9-42b7-82a1-e6b5a2407876" visibility="public" xmi:id="R-20a0dd2c-ab76-44bc-94cc-2c2d8d7f1220" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="53c8f01c-7502-48d6-85e7-df0527935839" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-6e6b65ce-d5a1-4c13-97d7-6958414af21d" source="R-996a7ceb-e5e9-447b-83a1-3a6693d6edbd" target="R-b0b15d5e-247d-458a-ba4b-d388ec1b6bb6" visibility="public" xmi:id="R-6e6b65ce-d5a1-4c13-97d7-6958414af21d" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="78d1f463-bc60-4c05-b0ea-0e7d340bb1b1" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-e60370a4-14bb-4b84-ad88-b82ce813930c" source="R-786d85d7-bcf3-4765-8378-ba6f12d352e9" target="R-db720a37-410d-4b6e-ba54-335f20f1be54" visibility="public" xmi:id="R-e60370a4-14bb-4b84-ad88-b82ce813930c" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="3b908030-88fe-48e7-84b5-39632ae0169d" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="Yes R-c787d73e-2223-4d08-961d-e1692959063d" source="R-db720a37-410d-4b6e-ba54-335f20f1be54" target="R-8da17d7f-141e-4b98-9a26-b949e61b0bc7" visibility="public" xmi:id="R-c787d73e-2223-4d08-961d-e1692959063d" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="4d73a1aa-fbad-4476-8996-f36664d8c7aa" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="No R-d40e1e83-e46a-4ac6-9044-24045398829d" source="R-db720a37-410d-4b6e-ba54-335f20f1be54" target="R-243a6ebc-0ae9-4f64-8d4d-1c25e178b755" visibility="public" xmi:id="R-d40e1e83-e46a-4ac6-9044-24045398829d" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="4865b837-fd44-4247-a5a3-6d2fc3ff2caa" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="uml:ObjectFlow R-dcc15ebb-328e-44d9-a1e9-03e149787af7" source="R-3b88cb31-5952-4545-921d-d2908c27b9c3" target="R-7ab152e4-fd46-4ed3-ab1f-588ab84ccacb" visibility="public" xmi:id="R-dcc15ebb-328e-44d9-a1e9-03e149787af7" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="3252f60a-d830-4711-93ff-58d1299ef4cd" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="Yes R-43458eec-b4d3-4cf7-9553-248c3ae8300d" source="R-7ab152e4-fd46-4ed3-ab1f-588ab84ccacb" target="R-3541d240-105d-4818-949d-87c057aff000" visibility="public" xmi:id="R-43458eec-b4d3-4cf7-9553-248c3ae8300d" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="615b037f-f540-4366-ac3c-f08eec60f539" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge name="No R-e89156c3-0b3c-43b9-bb62-443f89bdc9a3" source="R-7ab152e4-fd46-4ed3-ab1f-588ab84ccacb" target="R-4fc2f7a8-7cb9-4567-a977-57b73a817b5e" visibility="public" xmi:id="R-e89156c3-0b3c-43b9-bb62-443f89bdc9a3" xmi:type="uml:ObjectFlow">
+        <weight value="1" xmi:id="d50a9faf-4780-4bc9-a7c2-0341b6c19af9" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-6ec6ee03-8360-4e15-a455-11f2f7ef1959" target="R-b0b15d5e-247d-458a-ba4b-d388ec1b6bb6" xmi:id="S-fbd24e42-e228-4444-ab99-55bc3b6bb62c" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="2e20dd0c-503a-4c74-8607-0ad77f9ff5a2" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-7d40bbb6-e87d-4eff-9b98-841d8bd308e1" target="R-6ec6ee03-8360-4e15-a455-11f2f7ef1959" xmi:id="S-bd29097e-8cb6-47d5-87b6-1dccc7715790" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="c183c912-b30e-430c-b727-498fa21b968b" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-dfd0d2b0-7a84-48c1-9629-55fd691075ff" target="R-cff8cccc-c718-4566-987c-da9cc4afad7c" xmi:id="S-62bd5e22-c3d1-46b6-9de0-e824458361a4" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="83ff68ed-5cf7-49ee-84d0-37d4b735cd2e" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+      <edge source="R-93b07a3b-9716-418f-a49a-de4eaaec3587" target="R-9870cbc8-82e4-47eb-afc0-535d136919cc" xmi:id="S-2270cfa2-2ad6-4c85-a1b8-e62a40b7c4c4" xmi:type="uml:ControlFlow">
+        <weight value="1" xmi:id="ae09cdb2-344b-4f57-b7aa-62e9654e2ee0" xmi:type="uml:LiteralUnlimitedNatural"/>
+      </edge>
+    </packagedElement>
+    <ownedComment body="Author:s-sruesch.
+Created:01.10.2012 15:10.
+Title:.
+Comment:.
+Author:s-sruesch.
+Created:01.10.2012 15:10.
+Title:.
+Comment:.
+" xmi:id="a991c8fc-d12a-4d8a-823c-70665ea1d7b0" xmi:type="uml:Comment"/>
+  </uml:Model>
+</xmi:XMI>

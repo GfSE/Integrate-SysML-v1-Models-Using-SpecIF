@@ -1,0 +1,12 @@
+<xmi:XMI xmlns:uml="http://www.omg.org/spec/UML/20131001"
+         xmlns:StandardProfile="http://www.omg.org/spec/UML/20131001/StandardProfile"
+         xmlns:MD_Customization_for_SysML__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/SysML"
+         xmlns:MD_Customization_for_Requirements__additional_stereotypes="http://www.magicdraw.com/spec/Customization/180/Requirements"
+         xmlns:xmi="http://www.omg.org/spec/XMI/20131001"
+         xmlns:sysml="http://www.omg.org/spec/SysML/20150709/SysML">
+    <xmi:documentation xmi:type="xmi:Documentation">
+      <xmi:exporter>MagicDraw Clean XMI Exporter</xmi:exporter>
+      <xmi:exporterVersion>18.5</xmi:exporterVersion>
+    </xmi:documentation>
+        
+</xmi:XMI>

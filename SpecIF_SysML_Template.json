@@ -1,0 +1,351 @@
+{
+  "id": "TemplateID1",
+  "title": "Model_Template",
+  "specifVersion": "0.10.8",
+  "dataTypes": [
+	{
+		"id": "DT-Boolean",
+		"title": "Boolean",
+		"type": "xs:boolean",
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-Byte",
+		"title": "Byte",
+		"type": "xs:integer",
+		"min": 0,
+		"max": 255,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-Integer",
+		"title": "Integer",
+		"type": "xs:integer",
+		"min": -32768,
+		"max": 32767,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-Real",
+		"title": "Real",
+		"type": "xs:double",
+		"accuracy": 5,
+		"min": -10000,
+		"max": 10000,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-Decimal2",
+		"title": "Real with 2 Decimals",
+		"type": "xs:double",
+		"accuracy": 2,
+		"min": -10000,
+		"max": 10000,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-Date",
+		"title": "Date or Timestamp",
+		"type": "xs:dateTime",
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-ShortString",
+		"title": "String[96]",
+		"description": "String with length 96",
+		"type": "xs:string",
+		"maxLength": 96,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-String",
+		"title": "String[1024]",
+		"description": "String with length 1024",
+		"type": "xs:string",
+		"maxLength": 1024,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-Text",
+		"title": "dcterms:description",
+		"description": "A text string",
+		"type": "xs:string",
+		"revision": "main/1",
+		"maxLength": 1024,
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-URL",
+		"title": "URL",
+		"type": "xs:string",
+		"maxLength": 1024,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-EmailAddress",
+		"title": "E-mail",
+		"type": "xs:string",
+		"maxLength": 256,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-FormattedText",
+		"title": "Formatted Text",
+		"type": "xhtml",
+		"maxLength": 8192,
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2016-05-26T08:59:00+02:00"
+	},
+	{
+		"id": "DT-VisibilityKind",
+		"title": "SpecIF:VisibilityKind",
+		"description": "Enumerated values for visibility",
+		"type": "xs:enumeration",
+		"values": [
+			{
+				"id": "V-VisibilityKind-0",
+				"value": "Public"
+			},
+			{
+				"id": "V-VisibilityKind-1",
+				"value": "Private"
+			},
+			{
+				"id": "V-VisibilityKind-2",
+				"value": "Protected"
+			},
+			{
+				"id": "V-VisibilityKind-3",
+				"value": "Package"
+			},
+			{
+				"id": "V-VisibilityKind-4",
+				"value": "Internal"
+			},
+			{
+				"id": "V-VisibilityKind-5",
+				"value": "Protected Internal"
+			}
+		],
+		"revision": "main/1",
+		"replaces": [],
+		"changedAt": "2019-03-08T16:00:00+02:00"
+	}
+    
+  ],
+  "propertyClasses": [
+		{
+            "id": "PC-Name",
+            "title": "dcterms:title",
+            "description": "<p>A name given to the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Title (reference: Dublin Core) of the resource represented as rich text in XHTML content. SHOULD include only content that is valid inside an XHTML &lt;span&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>",
+            "dataType": "DT-ShortString",
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00"
+        },
+        {
+            "id": "PC-Description",
+            "title": "dcterms:description",
+            "description": "<p>An account of the resource. <small>(<i>source: <a href=\"http://dublincore.org/documents/dcmi-terms/\">DCMI</a></i>)</small></p><p>Descriptive text (reference: Dublin Core) about resource represented as rich text in XHTML content. SHOULD include only content that is valid and suitable inside an XHTML &lt;div&gt; element. <small>(<i>source: <a href=\"http://open-services.net/\">OSLC</a></i>)</small></p>",
+            "dataType": "DT-FormattedText",
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00"
+        },
+        {
+            "id": "PC-Visibility",
+            "title": "SpecIF:Visibility",
+            "description" :  "The visibility of a resource (e.g. Public, Private, Protected,...) as known from object orientation.",
+            "dataType": "DT-VisibilityKind",
+            "multiple": false,
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-09-10T08:59:00+02:00"
+        },
+        {
+            "id": "PC-Type",
+            "title": "dcterms:type",
+            "description": "The element type resp. the metamodel element (e.g. OMG:UML:2.5.1:Class)",
+            "dataType": "DT-ShortString",
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-08-20T20:32:25.411Z"
+        },
+		{
+			"id": "PC-Stereotype",
+			"title": "SpecIF:Stereotype",
+			"description" :  "A stereotype gives an element an additional/different meaning.",
+			"dataType": "DT-ShortString",
+			"revision": "main/1",
+			"replaces": [],
+			"changedAt": "2019-03-31T17:10:23.443Z"
+		}
+    ],
+  "resourceClasses": [
+		{
+            "id": "RC-Collection",
+            "title": "SpecIF:Collection",
+            "description": "<p>A 'Collection' is an arbitrary group of resources linked with a [[SpecIF:contains]] statement. It corresponds to a <a href=\"https://camunda.com/bpmn/reference/\">'Group'</a> in BPMN Diagrams.</p><p>BPMN: An arbitrary set of objects can be defined as a Group to show that they logically belong together. <small>(<i>source: <a href=\"http://www.bpmn-tool.com/en/tutorial/\">BPMN Tool</a></i>)</small></p>",
+            "instantiation": [ "auto" ],
+            "propertyClasses": [ "PC-Name", "PC-Description", "PC-Visibility", "PC-Type"],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-08-29T15:56:47+01:00",
+            "changedBy": "oalt"
+        },
+        {
+            "id": "RC-Diagram",
+            "title": "SpecIF:Diagram",
+            "description": "A 'Diagram' is a graphical model view with a specific communication purpose, e.g. a business process or system composition.",
+            "icon": "&#9635;",
+            "instantiation": [ "auto" ],
+            "propertyClasses": [ "PC-Name", "PC-Description", "PC-Visibility", "PC-Type"],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00"
+        },
+        {
+            "id": "RC-Actor",
+            "title": "FMC:Actor",
+            "description": "An 'Actor' is a fundamental model element type representing an active entity, be it an activity, a process step, a function, a system component or a role.",
+            "icon": "&#9632;",
+            "instantiation": [ "auto" ],
+            "propertyClasses": [ "PC-Name", "PC-Description", "PC-Visibility", "PC-Type" , "PC-Stereotype" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-09-10T08:59:00+02:00"
+        },
+        {
+            "id": "RC-State",
+            "title": "FMC:State",
+            "description": "A 'State' is a fundamental model element type representing a passive entity, be it a value, a condition, an information storage or even a physical shape.",
+            "icon": "&#9679;",
+            "instantiation": [ "auto" ],
+            "propertyClasses": [ "PC-Name", "PC-Description", "PC-Visibility", "PC-Type" , "PC-Stereotype" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-09-10T08:59:00+02:00"
+        },
+        {
+            "id": "RC-Event",
+            "title": "FMC:Event",
+            "description": "An 'Event' is a fundamental model element type representing a time reference, a change in condition/value or more generally a synchronisation primitive.",
+            "icon": "&#9830;",
+            "instantiation": [ "auto" ],
+            "propertyClasses": [ "PC-Name", "PC-Description", "PC-Visibility", "PC-Type" , "PC-Stereotype" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-09-10T08:59:00+02:00"
+        },
+		{
+            "id": "RC-Hierarchy",
+            "title": "SpecIF:Hierarchy",
+            "description": "Root node of a hierarchically organized specification (outline).",
+            "propertyClasses": [ "PC-Name", "PC-Description" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00"
+        }
+    ],
+  "statementClasses": [
+		{
+            "id": "SC-shows",
+            "title": "SpecIF:shows",
+            "description": "Statement: Plan resp. diagram shows Model-Element",
+            "instantiation": [ "auto" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "subjectClasses": [ "RC-Diagram" ],
+            "objectClasses": [ "RC-Actor", "RC-State", "RC-Event" ]
+        },
+        {
+            "id": "SC-contains",
+            "title": "SpecIF:contains",
+            "description": "Statement: Model-Element contains Model-Element",
+            "instantiation": [ "auto", "user" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "subjectClasses": [ "RC-Actor", "RC-State", "RC-Event" ],
+            "objectClasses": [ "RC-Actor", "RC-State", "RC-Event" ]
+        },
+        {
+            "id": "SC-writes",
+            "title": "SpecIF:writes",
+            "description": "Statement: Actor (Role, Function) writes State (Information)",
+            "instantiation": [ "auto" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "subjectClasses": [ "RC-Actor" ],
+            "objectClasses": [ "RC-State" ]
+        },
+        {
+            "id": "SC-reads",
+            "title": "SpecIF:reads",
+            "description": "Statement: Actor (Role, Function) reads State (Information)",
+            "instantiation": [ "auto" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2016-05-26T08:59:00+02:00",
+            "subjectClasses": [ "RC-Actor" ],
+            "objectClasses": [ "RC-State" ]
+        },
+        {
+            "id": "SC-signals",
+            "title": "SpecIF:signals",
+            "description": "A FMC:Actor 'signals' a FMC:Event.",
+            "instantiation": [ "auto" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-08-20T20:32:25+02:00",
+			"subjectClasses": [ "RC-Actor" ],
+            "objectClasses": [ "RC-Event" ]
+        },
+		        {
+            "id": "SC-triggers",
+            "title": "SpecIF:triggers",
+            "description": "A FMC:Event 'triggers' a FMC:Actor.",
+            "instantiation": [ "auto" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-08-20T20:32:25+02:00",
+			"subjectClasses": [ "RC-Event" ],
+            "objectClasses": [ "RC-Actor" ]
+        },
+		        {
+            "id": "SC-precedes",
+            "title": "SpecIF:precedes",
+            "description": "A FMC:Actor 'precedes' a FMC:Event.",
+            "instantiation": [ "auto" ],
+            "revision": "main/1",
+            "replaces": [],
+            "changedAt": "2019-08-20T20:32:25+02:00",
+			"subjectClasses": [ "RC-Actor" ],
+            "objectClasses": [ "RC-Actor" ]
+        }
+    ]
+}
